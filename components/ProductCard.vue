@@ -9,7 +9,9 @@
 </template>
 
 <script lang="ts" setup>
-  const { product } = defineProps(['product'])
+  defineProps<{
+    product: IProduct
+  }>()
 </script>
 
 <style scoped>
